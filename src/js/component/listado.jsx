@@ -21,7 +21,9 @@ const Listado = () => {
     }
     return (
         <>
-            <div className="text-center">
+        
+
+            <div className=" container text-center margin=3">
                 <h1>TODOS</h1>
                 <div>
                     <input 
@@ -33,13 +35,15 @@ const Listado = () => {
                 </div>
                 <ul className="list-group">
                     {items.map((item, index) => (
-                        <li  className="list-group-item" key={index}>
-                            {item}<button onClick={()=>removeitem(index)} style={{ marginLeft: '10px' }}>x</button>
+                        <li  className="list-group-item shadow p-3  bg-body-tertiary rounded" key={index} >
+                            {item}<button type="button" className="btn-close d-flex align-items-start" aria-label="Close" onClick={()=>removeitem(index)} ></button>
                         
                         </li>
                     ))}
                 </ul>
             </div>
+
+        
         </>
     );
 };
