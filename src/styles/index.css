@@ -1,12 +1,8 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.shadow-sides {
+    position: relative;
+    /* Default shadow for the element */
+    box-shadow: 
+        -4px 0 8px rgba(0, 0, 0, 0.3),  /* Shadow on the left */
+        4px 0 8px rgba(0, 0, 0, 0.3);   /* Shadow on the right */
+}
